@@ -21,7 +21,7 @@ public class Circle {
 	}
 
 	public Point getCenter() {
-		return center;
+		return new Point(center);
 	}
 
 	public double surface() {
@@ -63,8 +63,12 @@ public class Circle {
 
 	public static void main(String[] args) {
 		/*
-		 * Point p=new Point(1,2); Circle c=new Circle(p,1); Circle c2=new
-		 * Circle(p,2); c2.translate(1,1); System.out.println(c+" "+c2);
+		 * Point p=new Point(1,2); 
+		 * Circle c=new Circle(p,1); 
+		 * Circle c2=new
+		 * Circle(p,2); 
+		 * c2.translate(1,1); 
+		 * System.out.println(c+" "+c2);
 		 */
 
 		Circle c = new Circle(new Point(0, 0), 2);
