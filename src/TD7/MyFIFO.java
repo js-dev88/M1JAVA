@@ -5,8 +5,8 @@ import java.util.Objects;
 public class MyFIFO {
 
 	private final Object[] array;
-	private int head;
-	private int tail;
+	private int head; // le premier élément pouvant être enlevé
+	private int tail; // la première case vide
 	
 
 	public MyFIFO(int max) {
